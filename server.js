@@ -168,11 +168,7 @@ wss.on("connection", (ws) => {
   });
 });
 
-app.use(express.static("public/"));
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
-});
 
-server.listen(3000, () => {
-  console.log("Server is listening on port 3000");
+server.listen(process.env.PORT, () => {
+  console.log("Server is listening on port ", process.env.PORT);
 });
