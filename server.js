@@ -168,6 +168,11 @@ wss.on("connection", (ws) => {
   });
 });
 
+// Health check endpoint
+app.get('/', (req, res) => {
+  res.status(200).send('OK');
+});
+
 
 server.listen(process.env.PORT, () => {
   console.log("Server is listening on port ", process.env.PORT);
