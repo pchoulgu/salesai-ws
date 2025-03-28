@@ -1,0 +1,17 @@
+[meta]
+  title = "Node Live Transcription Starter"
+  description = "Get started using Deepgram's Live Transcription with this Node demo app" 
+  author = "Deepgram DX Team <devrel@deepgram.com> (https://developers.deepgram.com)"
+  useCase = "Live"
+  language = "JavaScript"
+  framework = "Node"
+
+[build]
+  command = "npm install"
+
+[config]
+  sample = "sample.env"
+  output = ".env"
+
+[post-build]
+  message = "Run `npm run start` to get up and running."
